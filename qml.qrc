@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>View3DArea.qml</file>
+    </qresource>
+    <qresource prefix="/assets">
+        <file>assets/Dice.qml</file>
+        <file>assets/dice_001.mesh</file>
+        <file>assets/Dice_Bump.jpg.png</file>
+        <file>assets/Dice_Diffuse.jpg.png</file>
+    </qresource>
+</RCC>
