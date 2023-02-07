@@ -33,18 +33,41 @@ Rectangle
                     source: "assets/assets/Dice_Diffuse.jpg.png"
                 }
             }
-            //AxisHelper { id: _sceneAxis }
         }
         Node
         {
-            position: Qt.vector3d(0, 0, 0)
+            position: Qt.vector3d(-15, 0, 0)
             Model
             {
-               id: _diceModel
+               id: _firstDiceModel
                source: "/assets/assets/dice_001.mesh"
                materials: [_priDiceMaterial]
-               position: Qt.vector3d(0, 0, 0)
-               AxisHelper {}
+               z: -10
+            }
+            PropertyAnimation on eulerRotation
+            {
+                loops: Animation.Infinite
+                from: Qt.vector3d(0, 0, 0)
+                to: Qt.vector3d(360, 360, 360)
+                duration: 1500
+            }
+        }
+        Node
+        {
+            position: Qt.vector3d(25, 0, 0)
+            Model
+            {
+               id: _secondDiceModel
+               source: "/assets/assets/dice_001.mesh"
+               materials: [_priDiceMaterial]
+               z: -10
+            }
+            PropertyAnimation on eulerRotation
+            {
+                loops: Animation.Infinite
+                from: Qt.vector3d(0, 0, 0)
+                to: Qt.vector3d(360, 360, 360)
+                duration: 1500
             }
         }
 
